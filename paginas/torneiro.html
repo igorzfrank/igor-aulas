@@ -1,0 +1,2260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Botão voltar -->
+    <a href="../index.html" class="back-btn">←</a>
+    <div
+      style="
+        font-family: &quot;Inter&quot;, &quot;Segoe UI&quot;, sans-serif;
+        background: linear-gradient(
+          160deg,
+          #050507 0%,
+          #0a0a12 40%,
+          #0d0d1a 100%
+        );
+        padding: 40px 24px;
+        max-width: 980px;
+        margin: 0px auto;
+        color: #e0e0e0;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Partículas decorativas -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 0;
+          opacity: 0.03;
+          background-image:
+            radial-gradient(circle at 20% 30%, #3b82f6 1px, transparent 1px),
+            radial-gradient(circle at 80% 70%, #f97316 1px, transparent 1px),
+            radial-gradient(circle at 50% 90%, #8b5cf6 1px, transparent 1px);
+          background-size:
+            60px 60px,
+            80px 80px,
+            100px 100px;
+        "
+      ></div>
+
+      <!-- Névoas flutuantes -->
+      <div
+        style="
+          position: absolute;
+          top: -100px;
+          left: -100px;
+          width: 400px;
+          height: 400px;
+          background: #3b82f6;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          bottom: -100px;
+          right: -100px;
+          width: 350px;
+          height: 350px;
+          background: #f97316;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+
+      <!-- ══ CABEÇALHO PRINCIPAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 40px 36px 32px;
+          margin-bottom: 28px;
+          box-shadow:
+            0px 0px 40px rgba(59, 130, 246, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(59, 130, 246, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            background: rgba(59, 130, 246, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <div
+          style="
+            position: absolute;
+            bottom: -30px;
+            left: 40px;
+            width: 140px;
+            height: 140px;
+            background: rgba(249, 115, 22, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #3b82f6,
+              #f97316,
+              #3b82f6,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(59, 130, 246, 0.1);
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                border-radius: 8px;
+                padding: 6px 18px;
+                font-size: 14px;
+              "
+            >
+              <span
+                style="
+                  color: #60a5fa;
+                  font-size: 12px;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                "
+                >🎨 Atividade em Equipe · HTML e CSS</span
+              >
+            </div>
+          </div>
+          <div
+            style="
+              color: #fff;
+              font-size: 28px;
+              font-weight: 900;
+              line-height: 1.2;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            "
+          >
+            Atividade Prática<br style="font-size: 28px" /><span
+              style="
+                background: linear-gradient(180deg, #ffcc80, #f97316, #ea580c);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-size: 28px;
+                font-weight: 900;
+              "
+              >Aplicando Estilos de Marca no Wireframe</span
+            >
+          </div>
+          <div
+            style="
+              color: rgba(148, 163, 184, 0.9);
+              font-size: 14px;
+              margin-top: 10px;
+              letter-spacing: 0.5px;
+            "
+          >
+            HTML · CSS · Identidade Visual · GitHub · Canva · Apresentação
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              margin-top: 16px;
+              flex-wrap: wrap;
+              font-size: 14px;
+            "
+          >
+            <span
+              style="
+                background: rgba(59, 130, 246, 0.15);
+                color: #60a5fa;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >CSS</span
+            >
+            <span
+              style="
+                background: rgba(249, 115, 22, 0.15);
+                color: #fb923c;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(249, 115, 22, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >GitHub</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Canva</span
+            >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Equipe</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 1 — INSTRUÇÕES DO TORNEIO -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(59, 130, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(59, 130, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e293b, #0f172a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.2);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.4);
+            "
+            >1</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >🏆 INSTRUÇÕES DO TORNEIO</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 41, 59, 0.5),
+                rgba(15, 23, 42, 0.3)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 18px;
+              border-left: 4px solid #3b82f6;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.15);
+            "
+          >
+            <div
+              style="
+                color: #60a5fa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+              "
+            >
+              🎯 Missão da Equipe
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Vocês receberam um código de
+              <strong style="font-size: 13px; color: #e2e8f0">WIREFRAME</strong>
+              (HTML + CSS neutro) e a equipe deve aplicar o estilo dentro do
+              padrão da empresa que receberam. O objetivo é transformar uma
+              página genérica em uma página com a
+              <span
+                style="
+                  background: #3b82f6;
+                  color: white;
+                  padding: 1px 8px;
+                  border-radius: 6px;
+                  font-weight: bold;
+                  font-size: 13px;
+                "
+                >identidade visual completa da marca</span
+              >, mantendo a estrutura HTML intacta e modificando apenas o CSS.
+            </div>
+          </div>
+
+          <!-- Lista de Equipes -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <span style="font-size: 16px">👥</span
+            ><span
+              style="
+                color: #e2e8f0;
+                font-size: 14px;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+              "
+              >Equipes, Integrantes e Empresas</span
+            >
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 10px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <!-- Equipe 07 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #3b82f6;
+                font-size: 14px;
+                border: 1px solid rgba(59, 130, 246, 0.15);
+                transition: all 0.3s;
+              "
+            >
+              <div
+                style="
+                  color: #60a5fa;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 07 — PlayStation
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Pedro Henrique, Matheus Momm, Lucas Linhar
+              </div>
+            </div>
+            <!-- Equipe 11 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #22c55e;
+                font-size: 14px;
+                border: 1px solid rgba(34, 197, 94, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 11 — Xbox
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Artur Valentim, João Germano
+              </div>
+            </div>
+            <!-- Equipe 04 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f97316;
+                font-size: 14px;
+                border: 1px solid rgba(249, 115, 22, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fb923c;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 04 — Renner
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Julia, Heloisa e Thiago
+              </div>
+            </div>
+            <!-- Equipe 10 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #8b5cf6;
+                font-size: 14px;
+                border: 1px solid rgba(139, 92, 246, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #a78bfa;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 10 — Riachuelo
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Molina, Maite e Yngrid
+              </div>
+            </div>
+            <!-- Equipe 05 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ef4444;
+                font-size: 14px;
+                border: 1px solid rgba(239, 68, 68, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 05 — Inter
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">Caiã e Davi</div>
+            </div>
+            <!-- Equipe 02 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #8b5cf6;
+                font-size: 14px;
+                border: 1px solid rgba(139, 92, 246, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #a78bfa;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 02 — Nubank
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Francisco, Gustavo Trento e Eduardo
+              </div>
+            </div>
+            <!-- Equipe 03 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ec4899;
+                font-size: 14px;
+                border: 1px solid rgba(236, 72, 153, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #f472b6;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 03 — MaryKay
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Sophia, Manoella e Francielly
+              </div>
+            </div>
+            <!-- Equipe 06 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f43f5e;
+                font-size: 14px;
+                border: 1px solid rgba(244, 63, 94, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fb7185;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 06 — WePink
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Abraão, Hadassa, Vitória
+              </div>
+            </div>
+            <!-- Equipe 09 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #06b6d4;
+                font-size: 14px;
+                border: 1px solid rgba(6, 182, 212, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #22d3ee;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 09 — Magalu
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Gustavo Silva, Pedro Santiago e Heitor
+              </div>
+            </div>
+            <!-- Equipe 12 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f59e0b;
+                font-size: 14px;
+                border: 1px solid rgba(245, 158, 11, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fbbf24;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 12 — Casa Bahia
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Caetano, Eduardo P, João Ricardo
+              </div>
+            </div>
+            <!-- Equipe 01 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #eab308;
+                font-size: 14px;
+                border: 1px solid rgba(234, 179, 8, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #facc15;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 01 — Uber
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                João Gabriel, Lucas Henrique e Luiz Eduardo
+              </div>
+            </div>
+            <!-- Equipe 08 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #14b8a6;
+                font-size: 14px;
+                border: 1px solid rgba(20, 184, 166, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #2dd4bf;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Equipe 08 — 99Taxi
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Luan Henrique, Ana Clara e Sandro
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 2 — RECURSOS              -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(59, 130, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(59, 130, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e293b, #0f172a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.2);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.4);
+            "
+            >2</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >🔗 RECURSOS — Links Importantes</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 41, 59, 0.5),
+                rgba(15, 23, 42, 0.3)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 18px;
+              border-left: 4px solid #3b82f6;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.15);
+            "
+          >
+            <div
+              style="
+                color: #60a5fa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+              "
+            >
+              🧠 Materiais de apoio no Figma
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Abaixo estão os links para os arquivos do Figma que você usará
+              como referência. Neles você encontra os
+              <strong style="font-size: 13px; color: #e2e8f0"
+                >logos das empresas</strong
+              >, o
+              <strong style="font-size: 13px; color: #e2e8f0"
+                >wireframe base</strong
+              >
+              e um
+              <strong style="font-size: 13px; color: #e2e8f0"
+                >modelo pronto</strong
+              >
+              para se inspirar. Use esses recursos para guiar sua
+              personalização.
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <!-- Link Logos -->
+            <a
+              href="https://www.figma.com/design/xO1f12vEhBYRaRF8SlCsUE/Logos?node-id=0-1&t=Nwsd1ekL0fhbkEj0-1"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">🏢</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    FIGMA — LOGOS DAS EMPRESAS
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Acesse os logos oficiais de cada empresa para usar como
+                    referência de cores e estilo.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(59, 130, 246, 0.2);
+                    color: #60a5fa;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(59, 130, 246, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >🔗 ABRIR</span
+                >
+              </div>
+            </a>
+
+            <!-- Link Wireframe -->
+            <a
+              href="https://www.figma.com/design/iUY24zENE9CfgWBTecpdys/Landing-Page---Catalogo---HTML-CSS?node-id=11-2&t=u1eKq4RGtIM59eS2-1"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">📐</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    FIGMA — WIREFRAME BASE
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Visualize o wireframe original com a estrutura neutra (tons
+                    de cinza) que você vai personalizar.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(59, 130, 246, 0.2);
+                    color: #60a5fa;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(59, 130, 246, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >🔗 ABRIR</span
+                >
+              </div>
+            </a>
+
+            <!-- Link Modelo -->
+            <a
+              href="https://www.figma.com/design/gwVcRZ4XoVcc0ZOZHfSv2u/Michael-Jackson-Landing---HTML-CSS?node-id=0-1&t=tpEWvm2Mm6JKRkFO-1"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">🎨</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    FIGMA — MODELO DE REFERÊNCIA
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Veja um exemplo completo de como o wireframe fica depois de
+                    personalizado.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(59, 130, 246, 0.2);
+                    color: #60a5fa;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(59, 130, 246, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >🔗 ABRIR</span
+                >
+              </div>
+            </a>
+
+            <!-- Link Wireframe Aplicado -->
+            <a
+              href="./landing/index.html"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #14532d, #052e16);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(34, 197, 94, 0.2),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(34, 197, 94, 0.4);
+                "
+              >
+                <span style="font-size: 36px">🌐</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    WIREFRAME APLICADO — VEJA NO NAVEGADOR
+                  </div>
+                  <div style="color: #86efac; font-size: 11px; margin-top: 4px">
+                    Acesse a versão final do wireframe com o estilo já aplicado.
+                    Use como referência para o seu trabalho.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(34, 197, 94, 0.2);
+                    color: #4ade80;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(34, 197, 94, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >🔗 ABRIR</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(234, 179, 8, 0.1),
+                rgba(245, 158, 11, 0.05)
+              );
+              border-radius: 12px;
+              padding: 16px 20px;
+              border-left: 4px solid #f59e0b;
+              font-size: 14px;
+              border: 1px solid rgba(245, 158, 11, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #fbbf24;
+                font-size: 13px;
+                font-weight: 800;
+                margin-bottom: 6px;
+                letter-spacing: 0.5px;
+              "
+            >
+              💡 Como usar estes recursos
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.8">
+              <strong style="color: #e2e8f0">1.</strong> Acesse os
+              <strong style="color: #e2e8f0">Logos</strong> para conhecer as
+              cores e o estilo de cada empresa.<br />
+              <strong style="color: #e2e8f0">2.</strong> Veja o
+              <strong style="color: #e2e8f0">Wireframe Base</strong> para
+              entender a estrutura que você vai personalizar.<br />
+              <strong style="color: #e2e8f0">3.</strong> Consulte o
+              <strong style="color: #e2e8f0">Modelo de Referência</strong> para
+              se inspirar em como aplicar o estilo.<br />
+              <strong style="color: #e2e8f0">4.</strong> Acesse o
+              <strong style="color: #e2e8f0">Wireframe Aplicado</strong> para
+              ver o resultado final no navegador.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 3 — CÓDIGO BASE           -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(59, 130, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(59, 130, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e3a5f, #0c2d4a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.4);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.5);
+            "
+            >3</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >📋 CÓDIGO BASE — Copie o HTML e o CSS</span
+          >
+        </div>
+        <div
+          style="
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            font-size: 14px;
+          "
+        >
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.3),
+                rgba(12, 45, 74, 0.2)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 4px;
+              border-left: 4px solid #3b82f6;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #60a5fa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+              "
+            >
+              🧠 Como usar os códigos abaixo
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Crie uma pasta no seu computador. Dentro dela, crie dois arquivos:
+              <strong style="color: #e2e8f0">index.html</strong> e
+              <strong style="color: #e2e8f0">style.css</strong>. Copie o HTML
+              para o arquivo .html e o CSS para o arquivo .css. Depois é só
+              abrir o HTML no navegador e começar a modificar o CSS com a
+              identidade da sua empresa.
+            </div>
+          </div>
+
+          <!-- ABA HTML -->
+          <div
+            style="
+              background: #0a1628;
+              border-radius: 12px;
+              padding: 0;
+              overflow: hidden;
+              border: 1px solid rgba(59, 130, 246, 0.3);
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: #1e3a5f;
+                color: #e2e8f0;
+                padding: 12px 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+              "
+            >
+              <span
+                style="
+                  background: rgba(59, 130, 246, 0.3);
+                  border-radius: 6px;
+                  padding: 4px 10px;
+                  font-weight: 700;
+                  font-size: 12px;
+                  letter-spacing: 0.5px;
+                "
+                >HTML</span
+              >
+              <span style="font-size: 12px">index.html</span>
+              <span style="margin-left: auto; font-size: 11px; opacity: 0.8"
+                >📋 Copie este código</span
+              >
+            </div>
+            <div
+              style="
+                background: #050a14;
+                color: #86efac;
+                padding: 16px 20px;
+                font-size: 11px;
+                font-family: &quot;Courier New&quot;, monospace;
+                line-height: 1.6;
+                overflow-x: auto;
+                max-height: 400px;
+                overflow-y: auto;
+              "
+            >
+              <span style="color: #fbbf24">&lt;!doctype html&gt;</span><br />
+              <span style="color: #fbbf24">&lt;html lang="en"&gt;</span><br />
+              &nbsp;&nbsp;<span style="color: #fbbf24">&lt;head&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;meta charset="UTF-8" /&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;meta name="viewport" content="width=device-width,
+                initial-scale=1.0" /&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;title&gt;</span
+              >Document<span style="color: #fbbf24">&lt;/title&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;link rel="stylesheet" href="style.css" /&gt;</span
+              ><br />
+              &nbsp;&nbsp;<span style="color: #fbbf24">&lt;/head&gt;</span
+              ><br />
+              &nbsp;&nbsp;<span style="color: #fbbf24">&lt;body&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;header&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;h2&gt;</span
+              >LOGO<span style="color: #fbbf24">&lt;/h2&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;div class="links"&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;a href="#"&gt;</span
+              >Home<span style="color: #fbbf24">&lt;/a&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;a href="#"&gt;</span
+              >Sobre<span style="color: #fbbf24">&lt;/a&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;a href="#"&gt;</span
+              >Contato<span style="color: #fbbf24">&lt;/a&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;a href="#"&gt;</span
+              >Ajuda<span style="color: #fbbf24">&lt;/a&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/div&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/header&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;div class="hero"&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;h1&gt;</span
+              >HERO SECTION<span style="color: #fbbf24">&lt;/h1&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/div&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;div class="cards"&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #64748b"
+                >&lt;!-- Card 1 --&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;div class="card"&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;div class="card-img"&gt;&lt;/div&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;p&gt;</span
+              >Lorem ipsum dolor sit amet...<span style="color: #fbbf24"
+                >&lt;/p&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                style="color: #fbbf24"
+                >&lt;button&gt;</span
+              >Botão<span style="color: #fbbf24">&lt;/button&gt;</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/div&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #64748b"
+                >&lt;!-- Repetir para cards 2 a 9 --&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/div&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;footer&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;p&gt;</span
+              >© 2026 Pagina Marketplace - Projeto Educacional HTML e CSS<span
+                style="color: #fbbf24"
+                >&lt;/p&gt;</span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #fbbf24"
+                >&lt;/footer&gt;</span
+              ><br />
+              &nbsp;&nbsp;<span style="color: #fbbf24">&lt;/body&gt;</span
+              ><br />
+              <span style="color: #fbbf24">&lt;/html&gt;</span>
+            </div>
+          </div>
+
+          <!-- ABA CSS -->
+          <div
+            style="
+              background: #0a2814;
+              border-radius: 12px;
+              padding: 0;
+              overflow: hidden;
+              border: 1px solid rgba(34, 197, 94, 0.3);
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: #14532d;
+                color: #e2e8f0;
+                padding: 12px 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-bottom: 1px solid rgba(34, 197, 94, 0.3);
+              "
+            >
+              <span
+                style="
+                  background: rgba(34, 197, 94, 0.3);
+                  border-radius: 6px;
+                  padding: 4px 10px;
+                  font-weight: 700;
+                  font-size: 12px;
+                  letter-spacing: 0.5px;
+                "
+                >CSS</span
+              >
+              <span style="font-size: 12px">style.css</span>
+              <span style="margin-left: auto; font-size: 11px; opacity: 0.8"
+                >📋 Copie este código e modifique</span
+              >
+            </div>
+            <div
+              style="
+                background: #050a14;
+                color: #86efac;
+                padding: 16px 20px;
+                font-size: 11px;
+                font-family: &quot;Courier New&quot;, monospace;
+                line-height: 1.6;
+                overflow-x: auto;
+                max-height: 400px;
+                overflow-y: auto;
+              "
+            >
+              <span style="color: #60a5fa">*</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">margin</span>: 0px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">padding</span>: 0px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">box-sizing</span>:
+              border-box;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">text-decoration</span>:
+              none;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">header</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">width</span>: 100%;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">display</span>: flex;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">justify-content</span>:
+              space-between;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">align-items</span>:
+              center;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">padding</span>: 30px
+              80px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">background-color</span>:
+              <span style="color: #fbbf24">#d9d9d9</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              }<br /><br />
+              <span style="color: #60a5fa">.links</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">display</span>: flex;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">gap</span>: 20px;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">.links a</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">color</span>: black;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">text-transform</span>:
+              uppercase;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">.hero</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">height</span>: 70vh;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">width</span>: 100%;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">display</span>: flex;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">justify-content</span>:
+              center;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">align-items</span>:
+              center;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">background-color</span>:
+              <span style="color: #fbbf24">#767676</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              }<br /><br />
+              <span style="color: #60a5fa">.hero h1</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">color</span>:
+              <span style="color: #fbbf24">#434343</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">font-size</span>:
+              64px;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">.cards</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">padding</span>: 80px
+              0px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">display</span>: flex;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">gap</span>: 50px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">justify-content</span>:
+              center;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">flex-wrap</span>:
+              wrap;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">max-width</span>:
+              940px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">margin</span>: 0 auto;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">.card</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">width</span>: 250px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">padding</span>: 22px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">background</span>:
+              <span style="color: #fbbf24">#f3f3f3</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">display</span>: flex;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">flex-direction</span>:
+              column;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">gap</span>: 20px;<br />
+              }<br /><br />
+              <span style="color: #60a5fa">.card-img</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">width</span>: 206px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">height</span>: 97px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">background-color</span>:
+              <span style="color: #fbbf24">#d9d9d9</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              }<br /><br />
+              <span style="color: #60a5fa">footer</span> {<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">padding</span>: 30px
+              0px;<br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">background-color</span>:
+              <span style="color: #fbbf24">#d9d9d9</span>;
+              <span style="color: #64748b">/* ⬅️ ALTERE */</span><br />
+              &nbsp;&nbsp;<span style="color: #60a5fa">text-align</span>:
+              center;<br />
+              }
+            </div>
+          </div>
+
+          <div
+            style="
+              background: rgba(30, 64, 95, 0.2);
+              border-radius: 10px;
+              padding: 14px 18px;
+              border-left: 4px solid #3b82f6;
+              font-size: 13px;
+              color: #60a5fa;
+              line-height: 1.7;
+              border: 1px solid rgba(59, 130, 246, 0.15);
+            "
+          >
+            <strong style="font-size: 13px; color: #93c5fd">💡 Dica:</strong> Os
+            comentários
+            <strong style="color: #93c5fd">/* ⬅️ ALTERE */</strong> indicam os
+            principais pontos que você deve modificar. Mas você pode alterar
+            qualquer propriedade CSS — cores, fontes, tamanhos, espaçamentos,
+            bordas, sombras, etc.
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 4 — REGRAS E ENTREGA      -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(59, 130, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(59, 130, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #134e4a, #0c3d3a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+          "
+        >
+          <span
+            style="
+              background: rgba(20, 184, 166, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #2dd4bf;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(20, 184, 166, 0.5);
+            "
+            >4</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >📏 REGRAS, GITHUB, CANVA E ENTREGA</span
+          >
+        </div>
+        <div
+          style="
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            font-size: 14px;
+          "
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 14px;
+              margin-bottom: 10px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(20, 83, 45, 0.2),
+                  rgba(5, 46, 22, 0.15)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #22c55e;
+                font-size: 14px;
+                border: 1px solid rgba(34, 197, 94, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                ✅ O que vocês DEVEM modificar
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                🎨 <strong style="color: #e2e8f0">Cores</strong> — Backgrounds,
+                textos, botões, header e footer<br />
+                🔤 <strong style="color: #e2e8f0">Tipografia</strong> — Família
+                de fontes, tamanhos, pesos<br />
+                📏 <strong style="color: #e2e8f0">Espaçamentos</strong> —
+                Paddings, gaps, margens<br />
+                🖼️ <strong style="color: #e2e8f0">Card-img</strong> — Substituir
+                a cor cinza por imagens ou cores da marca<br />
+                🎯 <strong style="color: #e2e8f0">Botões</strong> — Cores,
+                bordas, efeitos de hover<br />
+                📐 <strong style="color: #e2e8f0">Hero section</strong> —
+                Background, cor do texto, altura
+              </div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(127, 29, 29, 0.2),
+                  rgba(69, 10, 10, 0.15)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #ef4444;
+                font-size: 14px;
+                border: 1px solid rgba(239, 68, 68, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                ❌ O que NÃO podem alterar
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                🚫 <strong style="color: #e2e8f0">Estrutura HTML</strong> — Não
+                adicione nem remova tags<br />
+                🚫 <strong style="color: #e2e8f0">Ordem dos elementos</strong> —
+                Mantenha header, hero, cards e footer<br />
+                🚫 <strong style="color: #e2e8f0">Classes e IDs</strong> — Não
+                renomeie os seletores existentes<br />
+                🚫 <strong style="color: #e2e8f0">Texto do conteúdo</strong> —
+                Mantenha os textos como estão<br />
+                🚫 <strong style="color: #e2e8f0">Layout geral</strong> —
+                Flexbox e grid já definidos devem ser mantidos
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.2),
+                rgba(12, 45, 74, 0.15)
+              );
+              border-radius: 12px;
+              padding: 18px 20px;
+              border-left: 4px solid #3b82f6;
+              margin-bottom: 6px;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #1e3a5f;
+                  color: #60a5fa;
+                  border-radius: 8px;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 800;
+                  border: 1px solid rgba(59, 130, 246, 0.4);
+                "
+                >🔗</span
+              >
+              <span
+                style="
+                  color: #60a5fa;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >GitHub — Criando o Repositório da Equipe</span
+              >
+            </div>
+            <div
+              style="
+                color: #94a3b8;
+                font-size: 12px;
+                line-height: 1.7;
+                margin-bottom: 8px;
+              "
+            >
+              A equipe deve criar um
+              <strong style="color: #e2e8f0">novo repositório no GitHub</strong>
+              para armazenar o código do projeto. Siga os passos abaixo:
+            </div>
+            <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+              <strong style="color: #e2e8f0">1.</strong> Um integrante da equipe
+              cria um novo repositório no GitHub (público).<br />
+              <strong style="color: #e2e8f0">2.</strong> Nomeie o repositório
+              como:
+              <strong style="color: #e2e8f0"
+                >landing-page-[nome-da-empresa]</strong
+              >
+              (ex: landing-page-nubank).<br />
+              <strong style="color: #e2e8f0">3.</strong> Adicione os outros
+              integrantes como colaboradores do repositório.<br />
+              <strong style="color: #e2e8f0">4.</strong> Façam o upload dos
+              arquivos <strong style="color: #e2e8f0">index.html</strong> e
+              <strong style="color: #e2e8f0">style.css</strong>.<br />
+              <strong style="color: #e2e8f0">5.</strong> Ao final, enviem o
+              <strong style="color: #e2e8f0">link do repositório</strong> junto
+              com a entrega.
+            </div>
+          </div>
+
+          <!-- Canva -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(88, 28, 135, 0.2),
+                rgba(58, 12, 92, 0.15)
+              );
+              border-radius: 12px;
+              padding: 18px 20px;
+              border-left: 4px solid #8b5cf6;
+              margin-bottom: 6px;
+              font-size: 14px;
+              border: 1px solid rgba(139, 92, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #4c1d95;
+                  color: #a78bfa;
+                  border-radius: 8px;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 800;
+                  border: 1px solid rgba(139, 92, 246, 0.4);
+                "
+                >🎤</span
+              >
+              <span
+                style="
+                  color: #a78bfa;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Canva — Apresentação do Projeto</span
+              >
+            </div>
+            <div
+              style="
+                color: #94a3b8;
+                font-size: 12px;
+                line-height: 1.7;
+                margin-bottom: 8px;
+              "
+            >
+              A equipe deve criar uma
+              <strong style="color: #e2e8f0">apresentação no Canva</strong>
+              contendo os recursos que foram aplicados no projeto. A
+              apresentação deve incluir:
+            </div>
+            <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+              <strong style="color: #e2e8f0">1.</strong>
+              <strong style="color: #e2e8f0">Slide 1 — Capa:</strong> Nome da
+              empresa, nome dos integrantes da equipe.<br />
+              <strong style="color: #e2e8f0">2.</strong>
+              <strong style="color: #e2e8f0">Slide 2 — Referências:</strong>
+              Logo da empresa, paleta de cores utilizada, fontes escolhidas.<br />
+              <strong style="color: #e2e8f0">3.</strong>
+              <strong style="color: #e2e8f0">Slide 3 — Antes e Depois:</strong>
+              Comparação do wireframe neutro vs wireframe personalizado.<br />
+              <strong style="color: #e2e8f0">4.</strong>
+              <strong style="color: #e2e8f0">Slide 4 — Destaques:</strong>
+              Principais mudanças feitas no CSS (cores, fontes, botões,
+              cards).<br />
+              <strong style="color: #e2e8f0">5.</strong>
+              <strong style="color: #e2e8f0">Slide 5 — Resultado Final:</strong>
+              Print da página finalizada + link do repositório GitHub.
+            </div>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 14px;
+              margin-bottom: 10px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(180, 83, 9, 0.15),
+                  rgba(120, 53, 15, 0.1)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #f97316;
+                font-size: 14px;
+                border: 1px solid rgba(249, 115, 22, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #fb923c;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                ✅ Como fazer
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                1. Acessem os links do Figma para pesquisar a identidade visual
+                da empresa.<br />
+                2. Copiem o HTML e CSS base para uma pasta do projeto.<br />
+                3. Criem o repositório no
+                <strong style="color: #e2e8f0">GitHub</strong> e adicionem os
+                colaboradores.<br />
+                4. Modifiquem o
+                <strong style="color: #e2e8f0">CSS</strong> aplicando cores,
+                fontes e estilo da marca.<br />
+                5. Montem a apresentação no
+                <strong style="color: #e2e8f0">Canva</strong> com os recursos
+                aplicados.
+              </div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(20, 83, 45, 0.2),
+                  rgba(5, 46, 22, 0.15)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #22c55e;
+                font-size: 14px;
+                border: 1px solid rgba(34, 197, 94, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                📄 O que entregar
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                🔗 <strong style="color: #e2e8f0">Link do GitHub</strong> —
+                Repositório com os arquivos HTML e CSS.<br /><br />
+                🎤 <strong style="color: #e2e8f0">Link do Canva</strong> —
+                Apresentação com os recursos aplicados.<br /><br />
+                📄 <strong style="color: #e2e8f0">Formato</strong> — Cole os
+                links em um PDF ou envie diretamente.<br /><br />
+                📤 <strong style="color: #e2e8f0">Envio online</strong> — Envie
+                pelo ambiente virtual da disciplina.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(88, 28, 135, 0.15),
+                rgba(58, 12, 92, 0.1)
+              );
+              border-radius: 12px;
+              padding: 18px;
+              border-top: 3px solid #8b5cf6;
+              font-size: 14px;
+              border: 1px solid rgba(139, 92, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #a78bfa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 10px;
+                letter-spacing: 0.5px;
+              "
+            >
+              📊 Critérios de Avaliação
+            </div>
+            <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+              ✅ <strong style="color: #e2e8f0">Fidelidade à marca</strong> — As
+              cores e estilo refletem a identidade da empresa?<br />
+              ✅ <strong style="color: #e2e8f0">Consistência visual</strong> —
+              As cores e fontes foram aplicadas em toda a página?<br />
+              ✅ <strong style="color: #e2e8f0">HTML preservado</strong> — A
+              estrutura HTML não foi modificada?<br />
+              ✅ <strong style="color: #e2e8f0">GitHub</strong> — O repositório
+              foi criado e o link está acessível?<br />
+              ✅ <strong style="color: #e2e8f0">Apresentação Canva</strong> — A
+              apresentação contém todos os slides solicitados?
+            </div>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(180, 83, 9, 0.15),
+                rgba(120, 53, 15, 0.1)
+              );
+              border-radius: 10px;
+              padding: 14px 18px;
+              border-left: 4px solid #f97316;
+              font-size: 13px;
+              color: #fb923c;
+              line-height: 1.7;
+              border: 1px solid rgba(249, 115, 22, 0.2);
+            "
+          >
+            <strong style="font-size: 13px; color: #fdba74"
+              >💡 Dica final:</strong
+            >
+            Dividam as tarefas! Enquanto um integrante cria o repositório no
+            GitHub, outro pesquisa as cores e fontes da empresa, e outro já
+            começa a modificar o CSS. A apresentação no Canva pode ser feita em
+            paralelo. Trabalho em equipe é a chave! 🚀
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ FECHAMENTO FINAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 32px;
+          box-shadow:
+            0px 0px 40px rgba(59, 130, 246, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(59, 130, 246, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background: rgba(59, 130, 246, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #3b82f6,
+              #f97316,
+              #3b82f6,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 16px;
+              font-size: 14px;
+            "
+          >
+            <span style="font-size: 22px">🏆</span
+            ><span
+              style="
+                color: #e2e8f0;
+                font-size: 17px;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+              "
+              >Resumo — Aplicando Estilos de Marca</span
+            >
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              gap: 10px;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(59, 130, 246, 0.08);
+                border: 1px solid rgba(59, 130, 246, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+                transition: all 0.3s;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📋</div>
+              <div
+                style="
+                  color: #60a5fa;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Copiar código base
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(249, 115, 22, 0.08);
+                border: 1px solid rgba(249, 115, 22, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">🎨</div>
+              <div
+                style="
+                  color: #fb923c;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Aplicar identidade
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(34, 197, 94, 0.08);
+                border: 1px solid rgba(34, 197, 94, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">🔗</div>
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                GitHub + Canva
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(239, 68, 68, 0.08);
+                border: 1px solid rgba(239, 68, 68, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📤</div>
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Enviar links
+              </div>
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px"
+          >
+            <span
+              style="
+                background: rgba(59, 130, 246, 0.15);
+                color: #60a5fa;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >CSS</span
+            >
+            <span
+              style="
+                background: rgba(249, 115, 22, 0.15);
+                color: #fb923c;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(249, 115, 22, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >GitHub</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Canva</span
+            >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Equipe</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

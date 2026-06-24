@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prova Prática — Catálogo HTML & CSS</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Botão voltar -->
+    <a href="../index.html" class="back-btn">←</a>
+    <div
+      style="
+        font-family: &quot;Inter&quot;, &quot;Segoe UI&quot;, sans-serif;
+        background: linear-gradient(
+          160deg,
+          #050507 0%,
+          #0a0a12 40%,
+          #0d0d1a 100%
+        );
+        padding: 40px 24px;
+        max-width: 980px;
+        margin: 0px auto;
+        color: #e0e0e0;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Partículas decorativas -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 0;
+          opacity: 0.03;
+          background-image:
+            radial-gradient(circle at 20% 30%, #ef4444 1px, transparent 1px),
+            radial-gradient(circle at 80% 70%, #f97316 1px, transparent 1px),
+            radial-gradient(circle at 50% 90%, #dc2626 1px, transparent 1px);
+          background-size:
+            60px 60px,
+            80px 80px,
+            100px 100px;
+        "
+      ></div>
+
+      <!-- Névoas flutuantes -->
+      <div
+        style="
+          position: absolute;
+          top: -100px;
+          left: -100px;
+          width: 400px;
+          height: 400px;
+          background: #ef4444;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          bottom: -100px;
+          right: -100px;
+          width: 350px;
+          height: 350px;
+          background: #f97316;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+
+      <!-- ══ CABEÇALHO PRINCIPAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 40px 36px 32px;
+          margin-bottom: 28px;
+          box-shadow:
+            0px 0px 40px rgba(239, 68, 68, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(239, 68, 68, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            background: rgba(239, 68, 68, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <div
+          style="
+            position: absolute;
+            bottom: -30px;
+            left: 40px;
+            width: 140px;
+            height: 140px;
+            background: rgba(249, 115, 22, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #ef4444,
+              #f97316,
+              #ef4444,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(239, 68, 68, 0.1);
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                border-radius: 8px;
+                padding: 6px 18px;
+                font-size: 14px;
+              "
+            >
+              <span
+                style="
+                  color: #f87171;
+                  font-size: 12px;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                "
+                >📝 Prova Prática · HTML e CSS</span
+              >
+            </div>
+          </div>
+          <div
+            style="
+              color: #fff;
+              font-size: 28px;
+              font-weight: 900;
+              line-height: 1.2;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            "
+          >
+            Prova Prática<br style="font-size: 28px" /><span
+              style="
+                background: linear-gradient(180deg, #fca5a5, #ef4444, #b91c1c);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-size: 28px;
+                font-weight: 900;
+              "
+              >Catálogo — HTML & CSS</span
+            >
+          </div>
+          <div
+            style="
+              color: rgba(148, 163, 184, 0.9);
+              font-size: 14px;
+              margin-top: 10px;
+              letter-spacing: 0.5px;
+            "
+          >
+            FIGMA · HTML · CSS · GitHub · Prova Individual
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              margin-top: 16px;
+              flex-wrap: wrap;
+              font-size: 14px;
+            "
+          >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Prova</span
+            >
+            <span
+              style="
+                background: rgba(249, 115, 22, 0.15);
+                color: #fb923c;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(249, 115, 22, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >GitHub</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >FIGMA</span
+            >
+            <span
+              style="
+                background: rgba(59, 130, 246, 0.15);
+                color: #60a5fa;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Individual</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 1 — REGRAS GERAIS         -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(239, 68, 68, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(239, 68, 68, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #7f1d1d, #450a0a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(239, 68, 68, 0.3);
+          "
+        >
+          <span
+            style="
+              background: rgba(239, 68, 68, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #f87171;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(239, 68, 68, 0.5);
+            "
+            >⚠️</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >REGRAS GERAIS DA PROVA</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 14px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(127, 29, 29, 0.2),
+                  rgba(69, 10, 10, 0.15)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #ef4444;
+                font-size: 14px;
+                border: 1px solid rgba(239, 68, 68, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                🚫 PROIBIDO
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                📵
+                <strong style="color: #e2e8f0">Uso de celular</strong> durante
+                toda a prova<br />
+                🌐 <strong style="color: #e2e8f0">Uso de internet</strong> para
+                pesquisas ou consultas<br />
+                💬 <strong style="color: #e2e8f0">Comunicação</strong> com
+                outros alunos<br />
+                📋 <strong style="color: #e2e8f0">Consulta</strong> a materiais
+                externos não autorizados
+              </div>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(20, 83, 45, 0.2),
+                  rgba(5, 46, 22, 0.15)
+                );
+                border-radius: 12px;
+                padding: 18px;
+                border-top: 3px solid #22c55e;
+                font-size: 14px;
+                border: 1px solid rgba(34, 197, 94, 0.2);
+              "
+            >
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 14px;
+                  font-weight: 800;
+                  margin-bottom: 10px;
+                  letter-spacing: 0.5px;
+                "
+              >
+                ✅ PERMITIDO
+              </div>
+              <div style="font-size: 12px; color: #94a3b8; line-height: 1.9">
+                💻
+                <strong style="color: #e2e8f0">Usar o FIGMA</strong> instalado
+                no computador<br />
+                📂 <strong style="color: #e2e8f0">Consultar arquivos</strong> do
+                repositório baixado<br />
+                📄
+                <strong style="color: #e2e8f0">Usar o caderno de prova</strong>
+                como guia<br />
+                ⏰ <strong style="color: #e2e8f0">Fazer a prova</strong> até o
+                horário de saída
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(234, 179, 8, 0.1),
+                rgba(245, 158, 11, 0.05)
+              );
+              border-radius: 12px;
+              padding: 16px 20px;
+              border-left: 4px solid #f59e0b;
+              font-size: 14px;
+              border: 1px solid rgba(245, 158, 11, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #fbbf24;
+                font-size: 13px;
+                font-weight: 800;
+                margin-bottom: 6px;
+                letter-spacing: 0.5px;
+              "
+            >
+              ⏰ Horário da Prova
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.8">
+              A prova poderá ser realizada até o
+              <strong style="color: #e2e8f0">horário de saída dos alunos</strong
+              >. Administre bem o seu tempo! Ao terminar, chame o professor para
+              salvar seu projeto.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 2 — PASSO A PASSO          -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(239, 68, 68, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(239, 68, 68, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e3a5f, #0c2d4a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.4);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.5);
+            "
+            >📋</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >PASSO A PASSO — Preparação e Execução</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <!-- Passo 1 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.2),
+                rgba(12, 45, 74, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #3b82f6;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #3b82f6;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >1</span
+              >
+              <span
+                style="
+                  color: #60a5fa;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Instale o FIGMA no computador</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Acesse o site oficial do Figma e faça o download da versão
+              desktop. Instale o programa no seu computador antes de iniciar a
+              prova.
+            </div>
+          </div>
+
+          <!-- Passo 2 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.2),
+                rgba(12, 45, 74, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #f97316;
+              font-size: 14px;
+              border: 1px solid rgba(249, 115, 22, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #f97316;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >2</span
+              >
+              <span
+                style="
+                  color: #fb923c;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Baixe seu repositório na máquina</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Acesse o GitHub e faça o download (clone) do repositório da prova
+              para o seu computador. Você precisará dos arquivos locais para
+              trabalhar.
+            </div>
+          </div>
+
+          <!-- Passo 3 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(20, 83, 45, 0.2),
+                rgba(5, 46, 22, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #22c55e;
+              font-size: 14px;
+              border: 1px solid rgba(34, 197, 94, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #22c55e;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >3</span
+              >
+              <span
+                style="
+                  color: #4ade80;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Faça o download dos Assets</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Baixe o arquivo compactado com todos os recursos necessários para
+              a prova (imagens, ícones e arquivos complementares).
+            </div>
+            <a
+              href="./download/assets.zip"
+              style="
+                display: inline-block;
+                margin-top: 12px;
+                background: rgba(34, 197, 94, 0.2);
+                color: #4ade80;
+                padding: 10px 20px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 700;
+                border: 1px solid rgba(34, 197, 94, 0.4);
+                letter-spacing: 0.5px;
+                transition: all 0.3s;
+              "
+            >
+              📥 DOWNLOAD DOS ASSETS (WinRAR)
+            </a>
+          </div>
+
+          <!-- Passo 4 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(88, 28, 135, 0.2),
+                rgba(58, 12, 92, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #8b5cf6;
+              font-size: 14px;
+              border: 1px solid rgba(139, 92, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #8b5cf6;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >4</span
+              >
+              <span
+                style="
+                  color: #a78bfa;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Faça o download do Caderno de Prova</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Baixe o caderno de prova em PDF com todas as instruções
+              detalhadas, requisitos e critérios de avaliação. Use-o como guia
+              durante toda a prova.
+            </div>
+            <a
+              href="./download/Prova Prática - LOPR.pdf"
+              style="
+                display: inline-block;
+                margin-top: 12px;
+                background: rgba(139, 92, 246, 0.2);
+                color: #a78bfa;
+                padding: 10px 20px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 700;
+                border: 1px solid rgba(139, 92, 246, 0.4);
+                letter-spacing: 0.5px;
+                transition: all 0.3s;
+              "
+            >
+              📄 DOWNLOAD DO CADERNO DE PROVA
+            </a>
+          </div>
+
+          <!-- Passo 5 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.2),
+                rgba(12, 45, 74, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #06b6d4;
+              font-size: 14px;
+              border: 1px solid rgba(6, 182, 212, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #06b6d4;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >5</span
+              >
+              <span
+                style="
+                  color: #22d3ee;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Acesse o link do FIGMA (COM INTERNET)</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Este link deve ser acessado
+              <strong style="color: #e2e8f0"
+                >enquanto você tem acesso à internet</strong
+              >. Depois de aberto no FIGMA desktop, o arquivo ficará disponível
+              offline.
+            </div>
+            <a
+              href="https://www.figma.com/design/ZGvS87W9njY2tD2tjKbnIj/Catalogo---HTML-CSS?node-id=1-2&t=hpfkdIzxXtoqh8A9-1"
+              target="_blank"
+              style="
+                display: inline-block;
+                margin-top: 12px;
+                background: rgba(6, 182, 212, 0.2);
+                color: #22d3ee;
+                padding: 10px 20px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 700;
+                border: 1px solid rgba(6, 182, 212, 0.4);
+                letter-spacing: 0.5px;
+                transition: all 0.3s;
+              "
+            >
+              🔗 ABRIR FIGMA — CATÁLOGO HTML & CSS
+            </a>
+          </div>
+
+          <!-- Passo 5.5 — Imagem do Projeto -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.2),
+                rgba(12, 45, 74, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #ec4899;
+              font-size: 14px;
+              border: 1px solid rgba(236, 72, 153, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 12px;
+              "
+            >
+              <span
+                style="
+                  background: #ec4899;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >🖼️</span
+              >
+              <span
+                style="
+                  color: #f472b6;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Resultado Esperado do Projeto</span
+              >
+            </div>
+            <div
+              style="
+                color: #94a3b8;
+                font-size: 13px;
+                line-height: 1.9;
+                margin-bottom: 14px;
+              "
+            >
+              Abaixo está a imagem de referência do projeto que você deve
+              entregar. Use-a como guia visual para conferir se seu resultado
+              está de acordo com o esperado.
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(15, 23, 42, 0.6),
+                  rgba(10, 10, 20, 0.4)
+                );
+                border-radius: 12px;
+                padding: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px dashed rgba(236, 72, 153, 0.3);
+                min-height: 200px;
+                transition: all 0.3s;
+              "
+            >
+              <!-- ⬇️ SUBSTITUA O SRC PELA IMAGEM DO PROJETO ⬇️ -->
+              <img
+                src="./download/catalogo.png"
+                alt="Resultado esperado do projeto Catálogo HTML & CSS"
+                style="
+                  max-width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+                  box-shadow:
+                    0px 4px 20px rgba(0, 0, 0, 0.5),
+                    0px 0px 30px rgba(236, 72, 153, 0.1);
+                "
+                onerror="
+                  this.style.display = 'none';
+                  this.parentElement.innerHTML =
+                    '<div style=\'color: #94a3b8; font-size: 13px; text-align: center; padding: 40px;\'>🖼️ <strong style=\'color: #f472b6;\'>Imagem do projeto será anexada aqui</strong><br/><span style=\'font-size: 11px;\'>Substitua o src da tag img pelo caminho da imagem</span></div>';
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Passo 6 -->
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(180, 83, 9, 0.15),
+                rgba(120, 53, 15, 0.1)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #eab308;
+              font-size: 14px;
+              border: 1px solid rgba(234, 179, 8, 0.2);
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+              "
+            >
+              <span
+                style="
+                  background: #eab308;
+                  color: white;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 900;
+                "
+                >6</span
+              >
+              <span
+                style="
+                  color: #facc15;
+                  font-size: 15px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                "
+                >Ao terminar, chame o professor</span
+              >
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Quando finalizar o projeto,
+              <strong style="color: #e2e8f0">chame o professor</strong> para
+              salvar seu trabalho. Não feche o FIGMA nem o editor de código
+              antes da conferência.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO 3 — DICAS IMPORTANTES      -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(239, 68, 68, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(239, 68, 68, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #134e4a, #0c3d3a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+          "
+        >
+          <span
+            style="
+              background: rgba(20, 184, 166, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #2dd4bf;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(20, 184, 166, 0.5);
+            "
+            >💡</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >DICAS IMPORTANTES</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(20, 83, 45, 0.2),
+                rgba(5, 46, 22, 0.15)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 14px;
+              border-left: 4px solid #22c55e;
+              font-size: 14px;
+              border: 1px solid rgba(34, 197, 94, 0.2);
+            "
+          >
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              ✅ <strong style="color: #e2e8f0">Organize-se:</strong> Leia o
+              caderno de prova completo antes de começar.<br />
+              ✅ <strong style="color: #e2e8f0">FIGMA offline:</strong> Depois
+              de abrir o link com internet, o FIGMA mantém o arquivo em
+              cache.<br />
+              ✅ <strong style="color: #e2e8f0">Salve sempre:</strong> Pressione
+              Ctrl+S frequentemente para não perder seu progresso.<br />
+              ✅ <strong style="color: #e2e8f0">Administre o tempo:</strong> A
+              prova vai até o horário de saída — planeje cada etapa.<br />
+              ✅
+              <strong style="color: #e2e8f0">Conferência final:</strong> Revise
+              seu código antes de chamar o professor.
+            </div>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(180, 83, 9, 0.15),
+                rgba(120, 53, 15, 0.1)
+              );
+              border-radius: 10px;
+              padding: 14px 18px;
+              border-left: 4px solid #f97316;
+              font-size: 13px;
+              color: #fb923c;
+              line-height: 1.7;
+              border: 1px solid rgba(249, 115, 22, 0.2);
+            "
+          >
+            <strong style="font-size: 13px; color: #fdba74">⚠️ Atenção:</strong>
+            A prova é <strong style="color: #fdba74">individual</strong>. O
+            descumprimento das regras (uso de celular, internet ou comunicação
+            com colegas) resultará em anulação da prova.
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ FECHAMENTO FINAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 32px;
+          box-shadow:
+            0px 0px 40px rgba(239, 68, 68, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(239, 68, 68, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background: rgba(239, 68, 68, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #ef4444,
+              #f97316,
+              #ef4444,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 16px;
+              font-size: 14px;
+            "
+          >
+            <span style="font-size: 22px">🏆</span
+            ><span
+              style="
+                color: #e2e8f0;
+                font-size: 17px;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+              "
+              >Resumo — Prova Prática Catálogo HTML & CSS</span
+            >
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              gap: 10px;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(59, 130, 246, 0.08);
+                border: 1px solid rgba(59, 130, 246, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+                transition: all 0.3s;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📋</div>
+              <div
+                style="
+                  color: #60a5fa;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Preparar ambiente
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(34, 197, 94, 0.08);
+                border: 1px solid rgba(34, 197, 94, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📥</div>
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Baixar recursos
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(6, 182, 212, 0.08);
+                border: 1px solid rgba(6, 182, 212, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">🎨</div>
+              <div
+                style="
+                  color: #22d3ee;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Executar prova
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(234, 179, 8, 0.08);
+                border: 1px solid rgba(234, 179, 8, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">💾</div>
+              <div
+                style="
+                  color: #facc15;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Salvar projeto
+              </div>
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px"
+          >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Prova</span
+            >
+            <span
+              style="
+                background: rgba(249, 115, 22, 0.15);
+                color: #fb923c;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(249, 115, 22, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >GitHub</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >FIGMA</span
+            >
+            <span
+              style="
+                background: rgba(59, 130, 246, 0.15);
+                color: #60a5fa;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(59, 130, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Individual</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

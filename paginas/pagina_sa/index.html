@@ -1,0 +1,1693 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Final UC — HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <!-- Botão voltar -->
+    <a href="../../index.html" class="back-btn">←</a>
+    <div
+      style="
+        font-family: &quot;Inter&quot;, &quot;Segoe UI&quot;, sans-serif;
+        background: linear-gradient(
+          160deg,
+          #050507 0%,
+          #0a0a12 40%,
+          #0d0d1a 100%
+        );
+        padding: 40px 24px;
+        max-width: 980px;
+        margin: 0px auto;
+        color: #e0e0e0;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Partículas decorativas -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 0;
+          opacity: 0.03;
+          background-image:
+            radial-gradient(circle at 20% 30%, #8b5cf6 1px, transparent 1px),
+            radial-gradient(circle at 80% 70%, #06b6d4 1px, transparent 1px),
+            radial-gradient(circle at 50% 90%, #3b82f6 1px, transparent 1px);
+          background-size:
+            60px 60px,
+            80px 80px,
+            100px 100px;
+        "
+      ></div>
+
+      <!-- Névoas flutuantes -->
+      <div
+        style="
+          position: absolute;
+          top: -100px;
+          left: -100px;
+          width: 400px;
+          height: 400px;
+          background: #8b5cf6;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          bottom: -100px;
+          right: -100px;
+          width: 350px;
+          height: 350px;
+          background: #06b6d4;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.03;
+          pointer-events: none;
+          z-index: 0;
+        "
+      ></div>
+
+      <!-- ══ CABEÇALHO PRINCIPAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 40px 36px 32px;
+          margin-bottom: 28px;
+          box-shadow:
+            0px 0px 40px rgba(139, 92, 246, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(139, 92, 246, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            background: rgba(139, 92, 246, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <div
+          style="
+            position: absolute;
+            bottom: -30px;
+            left: 40px;
+            width: 140px;
+            height: 140px;
+            background: rgba(6, 182, 212, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #8b5cf6,
+              #06b6d4,
+              #8b5cf6,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(139, 92, 246, 0.1);
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                border-radius: 8px;
+                padding: 6px 18px;
+                font-size: 14px;
+              "
+            >
+              <span
+                style="
+                  color: #a78bfa;
+                  font-size: 12px;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                "
+                >🚀 Projeto Final · HTML, CSS & JavaScript</span
+              >
+            </div>
+          </div>
+          <div
+            style="
+              color: #fff;
+              font-size: 28px;
+              font-weight: 900;
+              line-height: 1.2;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            "
+          >
+            Projeto Final da UC<br style="font-size: 28px" /><span
+              style="
+                background: linear-gradient(180deg, #c4b5fd, #8b5cf6, #6d28d9);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-size: 28px;
+                font-weight: 900;
+              "
+              >Replicando o FIGMA com Funcionalidade</span
+            >
+          </div>
+          <div
+            style="
+              color: rgba(148, 163, 184, 0.9);
+              font-size: 14px;
+              margin-top: 10px;
+              letter-spacing: 0.5px;
+            "
+          >
+            FIGMA · HTML · CSS · JavaScript · Responsividade · Duplas
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              margin-top: 16px;
+              flex-wrap: wrap;
+              font-size: 14px;
+            "
+          >
+            <span
+              style="
+                background: rgba(139, 92, 246, 0.15);
+                color: #a78bfa;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >FIGMA</span
+            >
+            <span
+              style="
+                background: rgba(6, 182, 212, 0.15);
+                color: #22d3ee;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(6, 182, 212, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >JavaScript</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >HTML & CSS</span
+            >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 5px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Duplas</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO — REGRAS DO PROJETO        -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(139, 92, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(139, 92, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #4c1d95, #2e1065);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.4);
+          "
+        >
+          <span
+            style="
+              background: rgba(139, 92, 246, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #a78bfa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(139, 92, 246, 0.5);
+            "
+            >📋</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >REGRAS DO PROJETO FINAL</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(139, 92, 246, 0.1),
+                rgba(88, 28, 135, 0.05)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 18px;
+              border-left: 4px solid #8b5cf6;
+              font-size: 14px;
+              border: 1px solid rgba(139, 92, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #a78bfa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+              "
+            >
+              🎯 Objetivo do Projeto
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              O aluno deve
+              <strong style="color: #e2e8f0"
+                >replicar uma página do FIGMA</strong
+              >
+              deixando-a
+              <strong style="color: #e2e8f0">totalmente funcional</strong>,
+              seguindo todos os padrões visuais e de interação definidos no
+              design. O projeto deve ser desenvolvido em
+              <strong style="color: #e2e8f0">HTML, CSS e JavaScript</strong>,
+              com foco em fidelidade ao layout, responsividade e boas práticas
+              de código.
+            </div>
+          </div>
+
+          <!-- Lista de Regras -->
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <!-- Regra 1 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ef4444;
+                font-size: 14px;
+                border: 1px solid rgba(239, 68, 68, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(239, 68, 68, 0.2);
+                  color: #f87171;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >1</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">🚫 Proibido usar IA</strong> — O
+                projeto <strong style="color: #f87171">NÃO</strong> deve ser
+                feito com uso de Inteligência Artificial para gerar código.
+              </div>
+            </div>
+
+            <!-- Regra 2 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f97316;
+                font-size: 14px;
+                border: 1px solid rgba(249, 115, 22, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(249, 115, 22, 0.2);
+                  color: #fb923c;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >2</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">🏫 Feito em sala de aula</strong>
+                — O desenvolvimento deve ocorrer
+                <strong style="color: #e2e8f0">durante as aulas</strong>, com
+                acompanhamento do professor.
+              </div>
+            </div>
+
+            <!-- Regra 3 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f59e0b;
+                font-size: 14px;
+                border: 1px solid rgba(245, 158, 11, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(245, 158, 11, 0.2);
+                  color: #fbbf24;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >3</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0"
+                  >🔤 Padrão de nomenclatura</strong
+                >
+                — Variáveis e funções devem começar com a
+                <strong style="color: #e2e8f0">inicial da dupla</strong>.
+                <br />
+                <span
+                  style="
+                    display: inline-block;
+                    margin-top: 6px;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 6px;
+                    padding: 6px 10px;
+                    font-family: &quot;Courier New&quot;, monospace;
+                    font-size: 11px;
+                    color: #86efac;
+                  "
+                >
+                  let soma → let
+                  <span style="color: #fbbf24">ib</span>Soma;<br />
+                  function somar() → function
+                  <span style="color: #fbbf24">ib</span>Somar()
+                </span>
+              </div>
+            </div>
+
+            <!-- Regra 4 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #22c55e;
+                font-size: 14px;
+                border: 1px solid rgba(34, 197, 94, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(34, 197, 94, 0.2);
+                  color: #4ade80;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >4</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">📱 Responsivo</strong> — O
+                projeto deve funcionar perfeitamente em
+                <strong style="color: #e2e8f0">Desktop e Mobile</strong>, com
+                layout adaptável.
+              </div>
+            </div>
+
+            <!-- Regra 5 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #06b6d4;
+                font-size: 14px;
+                border: 1px solid rgba(6, 182, 212, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(6, 182, 212, 0.2);
+                  color: #22d3ee;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >5</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">🎭 Personagem sorteado</strong> —
+                O personagem do projeto deve ser o que foi
+                <strong style="color: #e2e8f0">sorteado para a dupla</strong>.
+              </div>
+            </div>
+
+            <!-- Regra 6 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #8b5cf6;
+                font-size: 14px;
+                border: 1px solid rgba(139, 92, 246, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(139, 92, 246, 0.2);
+                  color: #a78bfa;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >6</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">📂 Repositório original</strong>
+                — Os repositórios
+                <strong style="color: #f87171">NÃO</strong> podem conter projeto
+                semelhante feito por IA para consulta.
+              </div>
+            </div>
+
+            <!-- Regra 7 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ec4899;
+                font-size: 14px;
+                border: 1px solid rgba(236, 72, 153, 0.15);
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <span
+                style="
+                  background: rgba(236, 72, 153, 0.2);
+                  color: #f472b6;
+                  border-radius: 50%;
+                  width: 28px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: 900;
+                  font-size: 13px;
+                  flex-shrink: 0;
+                "
+                >7</span
+              >
+              <div style="color: #94a3b8; font-size: 13px; line-height: 1.6">
+                <strong style="color: #e2e8f0">📵 Sem celular</strong> — Não
+                deve ser usado celular em sala durante a atividade.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO — BOTÕES DE DOWNLOAD       -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(139, 92, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(139, 92, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e3a5f, #0c2d4a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.4);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.5);
+            "
+            >🔗</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >RECURSOS DO PROJETO</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(30, 64, 95, 0.3),
+                rgba(12, 45, 74, 0.2)
+              );
+              border-radius: 12px;
+              padding: 20px 24px;
+              margin-bottom: 18px;
+              border-left: 4px solid #3b82f6;
+              font-size: 14px;
+              border: 1px solid rgba(59, 130, 246, 0.2);
+            "
+          >
+            <div
+              style="
+                color: #60a5fa;
+                font-size: 14px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+              "
+            >
+              📂 Materiais de apoio
+            </div>
+            <div style="color: #94a3b8; font-size: 13px; line-height: 1.9">
+              Utilize os recursos abaixo para desenvolver seu projeto. Baixe os
+              assets necessários, acesse o design no FIGMA e consulte o caderno
+              com as instruções completas.
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              margin-bottom: 14px;
+              font-size: 14px;
+            "
+          >
+            <!-- Download Assets -->
+            <a href="./assets/assets.zip" style="text-decoration: none">
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">📥</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    DOWNLOAD DOS ASSETS
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Baixe o arquivo compactado com todos os recursos necessários
+                    para o projeto.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(34, 197, 94, 0.2);
+                    color: #4ade80;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(34, 197, 94, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >📥 BAIXAR</span
+                >
+              </div>
+            </a>
+
+            <!-- Acessar FIGMA -->
+            <a
+              href="https://www.figma.com/design/L1up0I7XfZAK7XJzQPRl7j/Among-Project---HTML-CSS-JAVASCRIPT?node-id=0-1&t=3SWZSBbcZx8hrjfi-1"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">🎨</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    ACESSAR PROJETO NO FIGMA
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Visualize o design completo que deverá ser replicado. Use
+                    como referência principal.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(139, 92, 246, 0.2);
+                    color: #a78bfa;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(139, 92, 246, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >🔗 ABRIR</span
+                >
+              </div>
+            </a>
+
+            <!-- Download Caderno -->
+            <a
+              href="./assets/Avaliação Prática - SA.pdf"
+              style="text-decoration: none"
+            >
+              <div
+                style="
+                  background: linear-gradient(160deg, #1e293b, #0f172a);
+                  border-radius: 12px;
+                  padding: 18px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+                  box-shadow:
+                    0px 0px 20px rgba(59, 130, 246, 0.15),
+                    0px 4px 15px rgba(0, 0, 0, 0.4);
+                  transition: all 0.3s;
+                  cursor: pointer;
+                  font-size: 14px;
+                  border: 1px solid rgba(59, 130, 246, 0.3);
+                "
+              >
+                <span style="font-size: 36px">📄</span>
+                <div>
+                  <div
+                    style="
+                      color: #e2e8f0;
+                      font-size: 15px;
+                      font-weight: 800;
+                      letter-spacing: 0.3px;
+                    "
+                  >
+                    DOWNLOAD DO CADERNO DO PROJETO
+                  </div>
+                  <div style="color: #94a3b8; font-size: 11px; margin-top: 4px">
+                    Baixe o caderno com todas as instruções detalhadas e
+                    critérios de avaliação.
+                  </div>
+                </div>
+                <span
+                  style="
+                    margin-left: auto;
+                    background: rgba(245, 158, 11, 0.2);
+                    color: #fbbf24;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border: 1px solid rgba(245, 158, 11, 0.4);
+                    letter-spacing: 0.5px;
+                  "
+                  >📄 BAIXAR</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(
+                160deg,
+                rgba(139, 92, 246, 0.1),
+                rgba(88, 28, 135, 0.05)
+              );
+              border-radius: 10px;
+              padding: 14px 18px;
+              border-left: 4px solid #8b5cf6;
+              font-size: 13px;
+              color: #a78bfa;
+              line-height: 1.7;
+              border: 1px solid rgba(139, 92, 246, 0.2);
+            "
+          >
+            <strong style="font-size: 13px; color: #c4b5fd">💡 Dica:</strong>
+            Leia o caderno do projeto com atenção, baixe os assets, abra o FIGMA
+            e comece a planejar a estrutura do código antes de escrever qualquer
+            linha.
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- SEÇÃO — DUPLAS                    -->
+      <!-- ══════════════════════════════════ -->
+      <div
+        style="
+          background: linear-gradient(160deg, #0d0d1a, #111118);
+          border-radius: 16px;
+          padding: 0px;
+          margin-bottom: 22px;
+          box-shadow:
+            0px 0px 30px rgba(139, 92, 246, 0.1),
+            0px 6px 30px rgba(0, 0, 0, 0.5),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.02);
+          overflow: hidden;
+          font-size: 14px;
+          border: 1px solid rgba(139, 92, 246, 0.2);
+        "
+      >
+        <div
+          style="
+            background: linear-gradient(160deg, #1e3a5f, #0c2d4a);
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(59, 130, 246, 0.4);
+          "
+        >
+          <span
+            style="
+              background: rgba(59, 130, 246, 0.3);
+              border-radius: 8px;
+              padding: 6px 12px;
+              color: #60a5fa;
+              font-weight: 900;
+              font-size: 15px;
+              border: 1px solid rgba(59, 130, 246, 0.5);
+            "
+            >👥</span
+          >
+          <span
+            style="
+              color: #e2e8f0;
+              font-size: 17px;
+              font-weight: 800;
+              letter-spacing: 0.5px;
+            "
+            >DUPLAS DO PROJETO</span
+          >
+        </div>
+        <div style="padding: 28px 32px; font-size: 14px">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 10px;
+              font-size: 14px;
+            "
+          >
+            <!-- Dupla 1 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #3b82f6;
+                border: 1px solid rgba(59, 130, 246, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #60a5fa;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 1
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Hadassa ↔ Francielly
+              </div>
+            </div>
+            <!-- Dupla 2 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #22c55e;
+                border: 1px solid rgba(34, 197, 94, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 2
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Luiz ↔ Pedro Henrique
+              </div>
+            </div>
+            <!-- Dupla 3 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f97316;
+                border: 1px solid rgba(249, 115, 22, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fb923c;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 3
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Heloisa ↔ Abraão
+              </div>
+            </div>
+            <!-- Dupla 4 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #8b5cf6;
+                border: 1px solid rgba(139, 92, 246, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #a78bfa;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 4
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Sandro ↔ Caetano
+              </div>
+            </div>
+            <!-- Dupla 5 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ef4444;
+                border: 1px solid rgba(239, 68, 68, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 5
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Caiã ↔ Luan Henrique
+              </div>
+            </div>
+            <!-- Dupla 6 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f59e0b;
+                border: 1px solid rgba(245, 158, 11, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fbbf24;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 6
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Eduardo Steinbach ↔ Francisco
+              </div>
+            </div>
+            <!-- Dupla 7 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #06b6d4;
+                border: 1px solid rgba(6, 182, 212, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #22d3ee;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 7
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Matheus ↔ Artur Valentim
+              </div>
+            </div>
+            <!-- Dupla 8 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #ec4899;
+                border: 1px solid rgba(236, 72, 153, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #f472b6;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 8
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Davi ↔ Gustavo dos Santos
+              </div>
+            </div>
+            <!-- Dupla 9 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #14b8a6;
+                border: 1px solid rgba(20, 184, 166, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #2dd4bf;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 9
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Ana Clara ↔ Lucas Antonio
+              </div>
+            </div>
+            <!-- Dupla 10 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f43f5e;
+                border: 1px solid rgba(244, 63, 94, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fb7185;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 10
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Lucas Henrique ↔ Pedro Santiago
+              </div>
+            </div>
+            <!-- Dupla 11 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #eab308;
+                border: 1px solid rgba(234, 179, 8, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #facc15;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 11
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Vitória ↔ Ana Júlia
+              </div>
+            </div>
+            <!-- Dupla 12 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #6366f1;
+                border: 1px solid rgba(99, 102, 241, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #818cf8;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 12
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                João Germano ↔ Manoella
+              </div>
+            </div>
+            <!-- Dupla 13 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #10b981;
+                border: 1px solid rgba(16, 185, 129, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #34d399;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 13
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">Sophia ↔ Yngrid</div>
+            </div>
+            <!-- Dupla 14 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #d946ef;
+                border: 1px solid rgba(217, 70, 239, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #e879f9;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 14
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">
+                Eduardo Prospt ↔ Heitor
+              </div>
+            </div>
+            <!-- Dupla 15 -->
+            <div
+              style="
+                background: linear-gradient(
+                  160deg,
+                  rgba(30, 41, 59, 0.4),
+                  rgba(15, 23, 42, 0.3)
+                );
+                border-radius: 10px;
+                padding: 14px 16px;
+                border-left: 4px solid #f97316;
+                border: 1px solid rgba(249, 115, 22, 0.15);
+              "
+            >
+              <div
+                style="
+                  color: #fb923c;
+                  font-size: 12px;
+                  font-weight: 800;
+                  letter-spacing: 0.3px;
+                "
+              >
+                DUPLA 15
+              </div>
+              <div style="color: #94a3b8; font-size: 11px">Igor ↔ Maite</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ FECHAMENTO FINAL ══ -->
+      <div
+        style="
+          background: linear-gradient(
+            160deg,
+            #0d0d1a 0%,
+            #111118 50%,
+            #0a0a14 100%
+          );
+          border-radius: 16px;
+          padding: 32px;
+          box-shadow:
+            0px 0px 40px rgba(139, 92, 246, 0.15),
+            0px 12px 40px rgba(0, 0, 0, 0.6),
+            inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+          position: relative;
+          overflow: hidden;
+          font-size: 14px;
+          border: 2px solid rgba(139, 92, 246, 0.3);
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background: rgba(139, 92, 246, 0.04);
+            border-radius: 50%;
+            font-size: 14px;
+          "
+        >
+          &nbsp;
+        </div>
+        <!-- Linha brilhante no topo -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: linear-gradient(
+              90deg,
+              transparent,
+              #8b5cf6,
+              #06b6d4,
+              #8b5cf6,
+              transparent
+            );
+            opacity: 0.6;
+          "
+        ></div>
+        <div style="position: relative; z-index: 1; font-size: 14px">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 16px;
+              font-size: 14px;
+            "
+          >
+            <span style="font-size: 22px">🏆</span
+            ><span
+              style="
+                color: #e2e8f0;
+                font-size: 17px;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+              "
+              >Resumo — Projeto Final UC</span
+            >
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              gap: 10px;
+              margin-bottom: 18px;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                background: rgba(139, 92, 246, 0.08);
+                border: 1px solid rgba(139, 92, 246, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📥</div>
+              <div
+                style="
+                  color: #a78bfa;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Baixar Assets
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(6, 182, 212, 0.08);
+                border: 1px solid rgba(6, 182, 212, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">🎨</div>
+              <div
+                style="
+                  color: #22d3ee;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Acessar FIGMA
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(34, 197, 94, 0.08);
+                border: 1px solid rgba(34, 197, 94, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">📄</div>
+              <div
+                style="
+                  color: #4ade80;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Baixar Caderno
+              </div>
+            </div>
+            <div
+              style="
+                background: rgba(239, 68, 68, 0.08);
+                border: 1px solid rgba(239, 68, 68, 0.2);
+                border-radius: 10px;
+                padding: 13px;
+                text-align: center;
+                font-size: 14px;
+              "
+            >
+              <div style="font-size: 20px; margin-bottom: 5px">🚀</div>
+              <div
+                style="
+                  color: #f87171;
+                  font-size: 11px;
+                  font-weight: bold;
+                  letter-spacing: 0.3px;
+                "
+              >
+                Desenvolver
+              </div>
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px"
+          >
+            <span
+              style="
+                background: rgba(139, 92, 246, 0.15);
+                color: #a78bfa;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(139, 92, 246, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >FIGMA</span
+            >
+            <span
+              style="
+                background: rgba(6, 182, 212, 0.15);
+                color: #22d3ee;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(6, 182, 212, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >JavaScript</span
+            >
+            <span
+              style="
+                background: rgba(34, 197, 94, 0.15);
+                color: #4ade80;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(34, 197, 94, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >HTML & CSS</span
+            >
+            <span
+              style="
+                background: rgba(239, 68, 68, 0.15);
+                color: #f87171;
+                padding: 6px 14px;
+                border-radius: 8px;
+                font-size: 12px;
+                font-weight: bold;
+                border: 1px solid rgba(239, 68, 68, 0.3);
+                letter-spacing: 0.5px;
+              "
+              >Duplas</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

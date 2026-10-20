@@ -3,86 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hub Professor | 教師の柱</title>
+    <title>Hub de Aulas | Igor Frank Moreno</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- Partículas de fundo -->
-    <div class="particulas" id="particulas"></div>
 
-    <!-- Névoas flutuantes -->
-    <div class="nevoa nevoa-1"></div>
-    <div class="nevoa nevoa-2"></div>
-    <div class="nevoa nevoa-3"></div>
+  <body>
+    <a href="#" class="back-btn" aria-label="Voltar">←</a>
 
     <div class="container">
-      <!-- Emblema -->
-      <div class="emblema-container">
-        <div class="sol-nascente">
-          <div class="raios-sol" id="raiosSol"></div>
-          <div class="circulo-sol"></div>
+      <!-- Cabeçalho -->
+      <header class="topbar">
+        <div class="brandline">
+          <div class="brandmark">01</div>
+
+          <div>
+            <div class="eyebrow">HUB DE AULAS // PROFESSOR</div>
+            <div class="brandname">Central de Aprendizagem</div>
+          </div>
         </div>
-        <span class="subtitulo-japones">教師の柱 • KYOSHI NO HASHIRA</span>
-        <h1>Hub Professor</h1>
-        <p class="lema">⚔️ TREINE • EVOLUA • DOMINE ⚔️</p>
-      </div>
 
-      <!-- Linha decorativa -->
-      <div class="divisor-espada">
-        <span class="linha"></span>
-        <span class="tsuba">⚔️</span>
-        <span class="padrao-espada">教</span>
-        <span class="tsuba" style="animation-delay: 0.5s">📚</span>
-        <span class="padrao-espada">学</span>
-        <span class="tsuba" style="animation-delay: 1s">⚔️</span>
-        <span class="linha"></span>
-      </div>
+        <div class="status">● SISTEMA ONLINE</div>
+      </header>
 
-      <!-- Subtítulo -->
-      <p class="instrucao">Acesse o link abaixo para entrar na aula</p>
 
-      <!-- Grid de cards -->
-      <div class="deck">
-        <a
-          href="https://meet.google.com/sdo-yeen-ehw"
-          target="_blank"
-          class="pad purple"
-        >
-          <span class="icone-card">🧠</span>
-          <span class="titulo-card">Google Meet</span>
-          <span class="forma-card">Clique para entrar</span>
-        </a>
-        <a href="./paginas/download/modelo_curriculo.docx" target="_blank" class="pad blue">
-          <span class="icone-card">📄</span>
-          <span class="titulo-card">Modelo Curriculo</span>
-          <span class="forma-card">Clique para entrar</span>
-        </a>
-        <!-- <a href="./paginas/inclusao.html" target="" class="pad yellow">
-          <span class="icone-card">🧑‍🏫</span>
-          <span class="titulo-card">Semana da Inclusão</span>
-          <span class="forma-card">Clique para entrar</span>
-        </a> -->
+      <!-- Título das disciplinas -->
+      <section class="section-head" aria-labelledby="titulo-disciplinas">
+        <div>
+          <div class="title" id="titulo-disciplinas">Disciplinas</div>
+          <div class="subtitle">
+            Selecione uma matéria para acessar as aulas e materiais.
+          </div>
+        </div>
+
+        <div class="section-code">MODULE_01 / 06</div>
+      </section>
+
+      <!-- Disciplinas -->
+      <main class="deck">
         <!-- <a
-          href="https://docs.google.com/spreadsheets/d/1F1GcOtte6COF67qKdueWLXl7dKkCrvJaWp3_EZNMt4U/edit?usp=sharing"
-          target="_blank"
+          href="logica_de_programacao/logica_de_programacao.html"
+          class="pad orange"
+        >
+          <div class="pad-top">
+            <span class="index">01 // LOGIC</span>
+            <span class="icone-card" aria-hidden="true">🧠</span>
+          </div>
+
+          <span class="titulo-card">Lógica de Programação</span>
+          <span class="forma-card">Fundamentos · Algoritmos</span>
+        </a> -->
+
+        <!-- <a
+          href="desenvolvimento_de_sistemas/desenvolvimento_de_sistemas.html"
+          class="pad blue"
+        >
+          <div class="pad-top">
+            <span class="index">02 // DEV</span>
+            <span class="icone-card" aria-hidden="true">💻</span>
+          </div>
+
+          <span class="titulo-card">Desenvolvimento de Sistemas</span>
+          <span class="forma-card">Código · Sistemas</span>
+        </a> -->
+
+        <a href="design_web/design_web.html" class="pad cyan">
+          <div class="pad-top">
+            <span class="index">03 // WEB</span>
+            <span class="icone-card" aria-hidden="true">🎨</span>
+          </div>
+
+          <span class="titulo-card">Design Web</span>
+          <span class="forma-card">Interface · Front-end</span>
+        </a>
+
+        <!-- <a href="design_interfaces/design_interfaces.html" class="pad purple">
+          <div class="pad-top">
+            <span class="index">04 // UIUX</span>
+            <span class="icone-card" aria-hidden="true">📱</span>
+          </div>
+
+          <span class="titulo-card">Design de Interfaces</span>
+          <span class="forma-card">UI · UX · Usabilidade</span>
+        </a> -->
+
+        <!-- <a
+          href="./manutencao_de_sistemas/manutencao_de_sistemas.html"
           class="pad green"
         >
-          <span class="icone-card">💻</span>
-          <span class="titulo-card">Github</span>
-          <span class="forma-card">Clique para entrar</span>
+          <div class="pad-top">
+            <span class="index">05 // MAINT</span>
+            <span class="icone-card" aria-hidden="true">🛠️</span>
+          </div>
+
+          <span class="titulo-card">Manutenção de Sistemas</span>
+          <span class="forma-card">Prática · Sistemas</span>
         </a> -->
-      </div>
+
+        <!-- <a href="./modelagem_de_sistemas/modelagem_de_sistemas.html" class="pad red">
+          <div class="pad-top">
+            <span class="index">06 // MODEL</span>
+            <span class="icone-card" aria-hidden="true">📐</span>
+          </div>
+
+          <span class="titulo-card">Modelagem de Sistemas</span>
+          <span class="forma-card">Modelos · Diagramas</span>
+        </a> -->
+      </main>
 
       <!-- Rodapé -->
-      <div class="rodape">
-        <span class="simbolo-final">滅</span>
-        <p>Destrua dúvidas. Domine o conhecimento. Code with honor.</p>
-        <span class="tag-final"
-          >鬼殺隊 • Divisão de Tecnologia Educacional</span
-        >
-      </div>
+      <footer class="rodape">
+        <p>HUB DE AULAS · CENTRAL DE MATERIAIS E APRENDIZAGEM</p>
+        <span class="tag-final">
+          IGOR FRANK MORENO · TECNOLOGIA EDUCACIONAL
+        </span>
+      </footer>
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
